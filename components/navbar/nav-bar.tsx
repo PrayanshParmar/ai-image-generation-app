@@ -79,7 +79,7 @@ const NavBar = () => {
           {noAuth.map((values, index) => {
             return (
               <Button
-                tabIndex={index}
+                key={index}
                 className={values.className}
                 variant="ghost"
                 asChild
@@ -133,13 +133,8 @@ const NavBar = () => {
         <div className="flex items-center gap-2">
           {Auth.map((values, index) => {
             return (
-              <ActionTooltip label={values.label} side="bottom">
-                <Button
-                  tabIndex={index}
-                  size="icon"
-                  variant="ghost"
-                  className=" text-lg"
-                >
+              <ActionTooltip key={index} label={values.label} side="bottom">
+                <Button size="icon" variant="ghost" className=" text-lg">
                   {values.icon}
                 </Button>
               </ActionTooltip>

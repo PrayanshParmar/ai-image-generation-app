@@ -1,9 +1,7 @@
 "use client";
 
 import { useFirebaseAuth } from "@/auth/context/auth-context";
-import { DragCards } from "@/components/drag-hero";
 import Footer from "@/components/footer/footer";
-import ShuffleHero from "@/components/hero-section";
 import { MouseHero } from "@/components/mouse-hero";
 import NavBar from "@/components/navbar/nav-bar";
 import { useRouter } from "next/navigation";
